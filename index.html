@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Ladies Beauty Parlour</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec;
+            text-align: center;
+        }
+        header {
+            background: #d81b60;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+        .pricing-section {
+            padding: 40px 20px;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .price-chart {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .price-chart:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #d81b60;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fancy Ladies Beauty Parlour</h1>
+    </header>
+    <section class="pricing-section">
+        <h2>Our Services & Rates</h2>
+        <div class="pricing-container">
+            <img src="price-chart.jpg" alt="Price Rate Chart" class="price-chart">
+        </div>
+    </section>
+    <footer>
+        <p>Visit Us for the Best Beauty Services</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const priceChart = document.querySelector(".price-chart");
+            priceChart.addEventListener("click", function() {
+                alert("View our premium beauty services and prices!");
+            });
+        });
+    </script>
+</body>
+</html>
