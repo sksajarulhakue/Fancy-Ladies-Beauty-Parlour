@@ -16,26 +16,15 @@
         header {
             background: #c02221;
             color: white;
-            padding: 15px 10px;
-            font-size: 24px;
+            padding: 20px;
+            font-size: 26px;
             font-weight: bold;
             letter-spacing: 1px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             text-transform: uppercase;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        .tagline {
-            font-size: 18px;
-            color: #fff;
-            margin-top: 5px;
-            font-style: italic;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
         }
         .pricing-section {
             padding: 40px 15px;
@@ -60,8 +49,8 @@
             display: inline-block;
             background: #c02221;
             color: white;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 12px 24px;
+            font-size: 18px;
             font-weight: bold;
             border-radius: 25px;
             text-decoration: none;
@@ -89,19 +78,17 @@
             font-size: 16px;
             margin-top: 20px;
             text-align: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
         }
         @media (max-width: 768px) {
             header {
-                font-size: 20px;
-                padding: 12px 8px;
-                flex-direction: column;
-            }
-            .tagline {
-                font-size: 16px;
+                font-size: 22px;
+                padding: 15px;
             }
             .cta-button {
-                font-size: 14px;
-                padding: 8px 16px;
+                font-size: 16px;
+                padding: 10px 20px;
             }
             .customer-message {
                 font-size: 16px;
@@ -120,10 +107,7 @@
 </head>
 <body>
     <header>
-        <div>
-            <h1>Welcome to Fancy Ladies Beauty Parlour</h1>
-            <p class="tagline">Your Beauty, Our Passion</p>
-        </div>
+        <h1>Welcome to Fancy Ladies Beauty Parlour</h1>
     </header>
     <section class="pricing-section">
         <h2>Our Services & Rates</h2>
