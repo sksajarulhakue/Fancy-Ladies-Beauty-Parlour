@@ -26,10 +26,14 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
         .tagline {
             font-size: 18px;
-            color: #c02221;
+            color: #fff;
             margin-top: 5px;
             font-style: italic;
         }
@@ -90,6 +94,7 @@
             header {
                 font-size: 20px;
                 padding: 12px 8px;
+                flex-direction: column;
             }
             .tagline {
                 font-size: 16px;
@@ -115,7 +120,10 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Fancy Ladies Beauty Parlour</h1>
+        <div>
+            <h1>Welcome to Fancy Ladies Beauty Parlour</h1>
+            <p class="tagline">Your Beauty, Our Passion</p>
+        </div>
     </header>
     <section class="pricing-section">
         <h2>Our Services & Rates</h2>
