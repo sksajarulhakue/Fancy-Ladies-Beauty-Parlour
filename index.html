@@ -17,10 +17,17 @@
             background: linear-gradient(90deg, #d81b60, #ff4081);
             color: white;
             padding: 20px 0;
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
             letter-spacing: 1px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+        }
+        .tagline {
+            font-size: 20px;
+            color: #d81b60;
+            margin-top: 10px;
+            font-style: italic;
         }
         .pricing-section {
             padding: 50px 20px;
@@ -51,10 +58,21 @@
             border-radius: 25px;
             text-decoration: none;
             transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .cta-button:hover {
             background: #d81b60;
             transform: scale(1.1);
+        }
+        .customer-message {
+            font-size: 22px;
+            color: #ff4081;
+            font-weight: bold;
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         footer {
             background: linear-gradient(90deg, #d81b60, #ff4081);
@@ -71,13 +89,14 @@
 </head>
 <body>
     <header>
-        <h1>Fancy Ladies Beauty Parlour</h1>
+        <h1>Welcome to Fancy Ladies Beauty</h1>
     </header>
     <section class="pricing-section">
         <h2>Our Services & Rates</h2>
+        <p class="customer-message">We bring out your inner beauty with the best services at the best prices!</p>
         <div class="pricing-container">
             <img src="price-chart.jpg" alt="Price Rate Chart" class="price-chart">
-            <a href="#" class="cta-button">Book Your Appointment</a>
+            <a href="#" class="cta-button" id="whatsappButton">Book Your Appointment</a>
         </div>
     </section>
     <footer>
@@ -87,7 +106,13 @@
         document.addEventListener("DOMContentLoaded", function() {
             const priceChart = document.querySelector(".price-chart");
             priceChart.addEventListener("click", function() {
-                alert("Discover our premium beauty services and exclusive offers!");
+                alert("Discover our premium beauty services and exclusive offers! Because you deserve the best!");
+            });
+            
+            document.getElementById("whatsappButton").addEventListener("click", function() {
+                const phoneNumber = "7601890408";
+                const message = encodeURIComponent("Hi! I want to book an appointment. Any available slots?");
+                window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
             });
         });
     </script>
